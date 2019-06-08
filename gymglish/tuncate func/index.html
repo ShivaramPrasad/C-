@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- alerts -->
+    <div class="alert alert-success" id="alerts" role="alert">
+      <span aria-hidden="true">The modal has been closed successfully by <strong id="name"></strong></span>
+    </div>
+    
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Gymglish bootstrap test</h1>
+        <p>Gymglish propose des cours d'anglais en ligne par e-mails quotidiens. Dans chaque leçon, découvrez votre épisode de la saga Delavigne à San Francisco: humour,  anglais "business", accents variés...</p>
+        <p><a class="btn btn-primary btn-lg" href="https://www.gymglish.com/en/jobs/test/test-bootstrap" target="_blank" role="button" data-toggle="modal" data-target="#myModal">Learn more</a></p>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">My modal</h4>
+              </div>
+              <div class="modal-body">
+                When you click on the 'OK' button it should display a message with your firstname in the top of the page<br/>
+                <br><b>Firstname</b><input type="text" id="firstName" class="form-control" value="" required=""><br/>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="okay" onclick="firstName()" data-dismiss="alert">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!--Blocks-->
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">Block 1</div>
+      <div class="col-xs-6 col-sm-3">Block 2</div>
+      <div class="col-xs-6 col-sm-3">Block 3</div>
+      <div class="col-xs-6 col-sm-3">Block 4</div>
+    </div>
+    
+  </body>
+
+</html>

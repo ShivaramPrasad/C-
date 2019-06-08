@@ -1,0 +1,25 @@
+/* Styles go here */
+
+body {
+  padding: 20px;
+}
+
+.jumbotron{
+  border-radius: 10px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+#alerts{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding: 20px;
+  }
+  .col-xs-6.col-sm-3{
+    padding-right: 180px;
+    white-space: nowrap; 
+  }
+
+}

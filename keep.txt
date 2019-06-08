@@ -1,3 +1,10 @@
 C++ --> Basic Programs for Interview
 1. https://codescracker.com/cpp/program/cpp-program-find-length-of-string.htm
 2. geeksForgeeks
+
+
+//std problm
+sum = all data[i];
+mean = sum / 10;
+standard deviation += pow(data[i]/ mean, 2) 
+
